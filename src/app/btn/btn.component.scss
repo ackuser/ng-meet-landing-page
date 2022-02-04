@@ -1,0 +1,43 @@
+@import '_colors';
+@import '_fonts';
+
+.btn-common {
+    width: 193px;
+    height: 58px;
+    cursor: pointer;
+    color: $neutral-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 29px;
+}
+
+:host {
+    @extend .btn-common;
+}
+
+:host(.btn--1) {
+    background: $primary-1;
+    color: $neutral-3;
+
+    .btn__version {
+        color: $neutral-1;
+    }
+
+    &:hover {
+        background: #71C0D4;
+    }
+}
+
+:host(.btn--2) {
+    background: $primary-2;
+    color: $neutral-3;
+
+    ::ng-deep .btn__version {
+        color: $neutral-2;
+    }
+
+    &:hover {
+        background: #B18BDD;
+    }
+}

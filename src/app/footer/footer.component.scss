@@ -1,0 +1,36 @@
+@import '_colors';
+
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: $primary-1;
+    color: $neutral-3;
+    padding: 18% 12%;
+    position: relative;
+
+    .background{
+        position: absolute;
+        content: ' ';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        // z-index: 1;
+        opacity: 0.1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../../assets/images/mobile/image-footer.jpg");
+
+        @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+            background-image: url("../../assets/images/tablet/image-footer.jpg");
+        }
+
+        @media screen and (min-device-width: 1024px) {
+            background-image: url("../../assets/images/desktop/image-footer.jpg");
+        }
+    }
+
+}
