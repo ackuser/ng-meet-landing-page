@@ -33,7 +33,7 @@
 
     &-h2 {
         // @include font(900, 32px, $primary-3, 0, 36px);
-        @include font(900, 32px, 0, 36px);
+        @include font(900, 40px, 0, 40px);
 
         @media screen and (min-device-width: 768px) {
             @include font(900, 40px, 0, 44px);
@@ -52,6 +52,10 @@
         @media screen and (min-device-width: 1024px) {
             @include font(500, 18px, 0, 26px);
         }
+    }
+
+    &-btn {
+        @include font(900, 16px, 0, 26px);
     }
 
 }

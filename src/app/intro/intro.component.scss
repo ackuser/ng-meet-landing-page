@@ -1,0 +1,51 @@
+@import '_colors';
+
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 4% auto 15% auto;
+
+    .header {
+        content: url('../../assets/images/logo.svg');
+    }
+
+    .avatars {
+        flex-basis: 20%;
+        width: 110%;
+        display: flex;
+
+        &__item {
+            width: 54%;
+
+            &--left {
+                margin-left: -2%;
+            }
+        }
+    }
+
+    .content {
+        text-align: center;
+
+        &__title {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        &__desc {
+            color: $primary-4;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+
+    .actions {
+        flex-basis: 18%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
