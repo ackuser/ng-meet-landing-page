@@ -7,8 +7,25 @@
     justify-content: space-evenly;
     margin: 4% auto 15% auto;
 
+    @media screen and (min-device-width: 768px) {
+        margin: 5% auto 0% auto;
+        justify-content: space-around;
+    }
+
+    @media screen and (min-device-width: 1024px) {
+        margin-top: 7%;
+    }
+
     .header {
         content: url('../../assets/images/logo.svg');
+
+        @media screen and (min-device-width: 768px) {
+            margin-bottom: 8%;
+        }
+
+        @media screen and (min-device-width: 1024px) {
+            margin-bottom: 0%;
+        }
     }
 
     .avatars {
@@ -16,11 +33,28 @@
         width: 110%;
         display: flex;
 
+        @media screen and (min-device-width: 1024px) {
+            flex-basis: auto;
+            width: 100%;
+            position: absolute;
+
+        }
+
         &__item {
             width: 54%;
 
+            @media screen and (min-device-width: 1024px) {
+                width: auto;
+                height: auto;
+            }
+
             &--left {
                 margin-left: -2%;
+
+                @media screen and (min-device-width: 1024px) {
+                    margin-left: -3%;
+                    margin-right: 46%;
+                }
             }
         }
     }
@@ -31,12 +65,32 @@
         &__title {
             margin-left: 15%;
             margin-right: 15%;
+
+            @media screen and (min-device-width: 768px) {
+                margin-left: 25%;
+                margin-right: 25%;
+            }
+
+            @media screen and (min-device-width: 1024px) {
+                margin-left: 22%;
+                margin-right: 22%;
+            }
         }
 
         &__desc {
             color: $primary-4;
             margin-left: 5%;
             margin-right: 5%;
+
+            @media screen and (min-device-width: 768px) {
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+
+            @media screen and (min-device-width: 1024px) {
+                margin-left: 16%;
+                margin-right: 16%;
+            }
         }
     }
 
@@ -46,6 +100,17 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
+        @media screen and (min-device-width: 768px) {
+            flex-direction: row;
+            flex-basis: auto;
+            width: 45%;
+        }
+
+        @media screen and (min-device-width: 1024px) {
+            align-items: flex-start;
+            flex-basis: 28%;
+        }
     }
 
 }
