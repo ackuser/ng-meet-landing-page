@@ -35,7 +35,8 @@
         }
 
         @media screen and (min-device-width: 1024px) {
-            @include font(900, 64px, 0, 64px);
+            // @include font(900, 64px, 0, 64px);
+            @include font(900, 40px, 0, 44px);
         }
     }
 

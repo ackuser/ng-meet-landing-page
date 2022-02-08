@@ -52,8 +52,15 @@
                 margin-left: -2%;
 
                 @media screen and (min-device-width: 1024px) {
-                    margin-left: -3%;
-                    margin-right: 46%;
+                    left: 0;
+                }
+            }
+
+            &--right {
+                @media screen and (min-device-width: 1024px) {
+                    margin-right: -2%;
+                    position: absolute;
+                    right: 0;
                 }
             }
         }
