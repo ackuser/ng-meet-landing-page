@@ -8,6 +8,7 @@ import { ContentComponent } from './content/content.component';
 import { IntroComponent } from './intro/intro.component';
 import { BtnComponent } from './btn/btn.component';
 import { ImageComponent } from './image/image.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ImageComponent } from './image/image.component';
     ContentComponent,
     IntroComponent,
     BtnComponent,
-    ImageComponent
+    ImageComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,

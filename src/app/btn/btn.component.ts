@@ -1,4 +1,4 @@
-import { Component, EventEmitter, HostListener, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-btn',
@@ -7,6 +7,8 @@ import { Component, EventEmitter, HostListener, OnInit, Output } from '@angular/
 })
 export class BtnComponent implements OnInit {
 
+  @Input()
+  version!: string;
 
   @Output() OnClick: EventEmitter<any> = new EventEmitter<any>();
 

@@ -1,0 +1,26 @@
+@import '_colors';
+@import '_fonts';
+
+:host {
+    @extend .font-btn;
+    height: 56px;
+    width: 56px;
+    color: $primary-4;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid $primary-4-transp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+
+    .line {
+        position: absolute;
+        height: 84px;
+        width: 0;
+        opacity: .25;
+        border: .5px solid $primary-4;
+        top: -84px;
+    }
+}

@@ -1,0 +1,87 @@
+@import '_colors';
+@import '_fonts';
+
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+
+    @media screen and (min-device-width: 768px) {
+        margin-top: 11%;
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-basis: 34%;
+        margin-top: 37%;
+
+        @media screen and (min-device-width: 768px) {
+            width: 90%;
+            margin-top: 22%;
+        }
+
+        &__img {
+            width: 151px;
+            max-height: 143px;
+            border-radius: 8px;
+
+            @media screen and (min-device-width: 768px) {
+                width: 164px;
+                max-height: 156px;
+            }
+        }
+    }
+
+    .content {
+        flex-basis: 32%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        margin-bottom: 37%;
+
+        @media screen and (min-device-width: 768px) {
+            margin-bottom: 21%;
+            margin-top: 5%;
+        }
+
+        &__summary {
+            @extend .font-overline;
+            color: $primary-1;
+        }
+
+        &__title {
+            margin: auto 10%;
+
+            @media screen and (min-device-width: 768px) {
+                margin: auto 22%;
+            }
+        }
+
+        &__desc {
+            color: $primary-4;
+            margin: auto 6%;
+
+            @media screen and (min-device-width: 768px) {
+                margin: 2% 14%;
+            }
+        }
+    }
+
+    .index {
+        position: absolute;
+        z-index: 1;
+
+        &--01 {
+            top: 54px;
+        }
+
+        &--02 {
+            bottom: -3%;
+        }
+    }
+}

@@ -3,8 +3,9 @@
 
 .btn-common {
     @extend .font-btn;
-    width: 193px;
+    // width: 193px;
     height: 58px;
+    padding: 16px 40px;
     cursor: pointer;
     color: $neutral-1;
     display: flex;
@@ -33,7 +34,6 @@
 :host(.btn--2) {
     background: $primary-2;
     color: $neutral-3;
-    width: 139px;
 
     ::ng-deep .btn__version {
         color: $neutral-2;

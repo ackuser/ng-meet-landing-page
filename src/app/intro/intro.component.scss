@@ -43,7 +43,7 @@
         &__item {
             width: 54%;
 
-            @media screen and (min-device-width: 1024px) {
+            @media screen and (min-device-width: 768px) {
                 width: auto;
                 height: auto;
             }
@@ -67,8 +67,8 @@
             margin-right: 15%;
 
             @media screen and (min-device-width: 768px) {
-                margin-left: 25%;
-                margin-right: 25%;
+                margin-left: 26%;
+                margin-right: 26%;
             }
 
             @media screen and (min-device-width: 1024px) {
@@ -104,7 +104,7 @@
         @media screen and (min-device-width: 768px) {
             flex-direction: row;
             flex-basis: auto;
-            width: 45%;
+            width: 48%;
         }
 
         @media screen and (min-device-width: 1024px) {
